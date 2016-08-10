@@ -2,11 +2,11 @@ from distutils.core import setup, Extension
 import numpy.distutils.misc_util
 
 setup(
-    name = 'murmur',
+    name = 'murmur2',
     version = '1.0',
     ext_modules=[
         Extension(
-            "murmur", 
+            "murmur2", 
             [
                 "src/murmur2.cc",
                 "src/MurmurHash2.cpp",
