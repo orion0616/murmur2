@@ -3,7 +3,7 @@ import numpy.distutils.misc_util
 
 setup(
     name = 'murmur2',
-    version = '1.0',
+    version = '1.0.1',
     ext_modules=[
         Extension(
             "murmur2", 
@@ -21,5 +21,6 @@ setup(
     url = "https://github.com/orion46/murmur2",
     author = "Nobutaka Ito",
     author_email = "earth.nobu.light@gmail.com",
+    description  = "murmur2_64a python wrapper"
 )
 
