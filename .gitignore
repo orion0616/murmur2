@@ -3,4 +3,3 @@ dist/
 include/
 MANIFEST
 murmur.so
-setup.py
