@@ -1,26 +1,25 @@
 from distutils.core import setup, Extension
-import numpy.distutils.misc_util
+import numpy
 
 setup(
-    name = 'murmur2',
-    version = '1.0.1',
+    name='murmur2py3',
+    version='0.0.1',
     ext_modules=[
         Extension(
-            "murmur2", 
+            "murmur2py3",
             [
-                "src/murmur2.cc",
+                "src/murmur2py3.cc",
                 "src/MurmurHash2.cpp",
             ],
             include_dirs=[
-                numpy.distutils.misc_util.get_numpy_include_dirs()[0],
+                numpy.get_include(),
                 'include/'
             ],
-            
+
         )
     ],
-    url = "https://github.com/orion46/murmur2",
-    author = "Nobutaka Ito",
-    author_email = "earth.nobu.light@gmail.com",
-    description  = "murmur2_64a python wrapper"
+    url="https://github.com/alphajin1/murmur2py3",
+    author="Jinil Nam",
+    author_email="alphajin1@gmail.com",
+    description="murmur2_64a python3 wrapper"
 )
-
